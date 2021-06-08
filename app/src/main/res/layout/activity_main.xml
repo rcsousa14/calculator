@@ -29,7 +29,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_margin="2dp"
             android:text="7"/>
@@ -39,7 +39,7 @@
             android:layout_margin="2dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:onClick="onDigit"
             android:text="8"/>
@@ -49,7 +49,7 @@
             android:layout_margin="2dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:onClick="onDigit"
             android:text="9"/>
@@ -60,9 +60,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/teal_200"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:text="/"/>
     </LinearLayout>
     <!-- ROW 2-->
@@ -77,7 +77,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_margin="2dp"
             android:onClick="onDigit"
@@ -85,7 +85,7 @@
         <Button
             android:id="@+id/btnFive"
             android:layout_width="0dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -95,7 +95,7 @@
         <Button
             android:id="@+id/btnSix"
             android:layout_width="0dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -105,14 +105,14 @@
         <Button
             android:id="@+id/btnTimes"
             android:layout_width="0dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/teal_200"
             android:layout_margin="2dp"
-            android:onClick="onDigit"
-            android:text="X"/>
+            android:onClick="onOperator"
+            android:text="*"/>
     </LinearLayout>
     <!-- ROW 3-->
     <LinearLayout
@@ -127,7 +127,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="2dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:onClick="onDigit"
             android:text="1"/>
@@ -135,7 +135,7 @@
             android:id="@+id/btnTwo"
             android:layout_width="0dp"
             android:layout_margin="2dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -145,7 +145,7 @@
             android:id="@+id/btnThree"
             android:layout_width="0dp"
             android:layout_margin="2dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -155,19 +155,19 @@
             android:id="@+id/btnMinus"
             android:layout_width="0dp"
             android:layout_margin="2dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:backgroundTint="@color/teal_200"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:text="-"/>
     </LinearLayout>
     <!-- ROW 4-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="2dp"
         android:layout_weight="1"
@@ -177,14 +177,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_margin="2dp"
-            android:onClick="onDigit"
+            android:onClick="onDecimalPoint"
             android:text="."/>
         <Button
             android:id="@+id/btnZero"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -195,23 +195,23 @@
         <Button
             android:id="@+id/btnClear"
             android:layout_width="0dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_margin="2dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/teal_700"
-            android:onClick="onDigit"
+            android:onClick="onClear"
             android:text="CLR"/>
         <Button
             android:id="@+id/btnAdd"
             android:layout_width="0dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_margin="2dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:backgroundTint="@color/teal_200"
             android:text="+"/>
 
@@ -220,7 +220,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="2dp"
         android:layout_weight="1"
@@ -234,7 +234,7 @@
             android:backgroundTint="@color/black"
             android:textStyle="bold"
             android:layout_margin="2dp"
-            android:onClick="onDigit"
+            android:onClick="onEqual"
             android:text="="/>
 
 
