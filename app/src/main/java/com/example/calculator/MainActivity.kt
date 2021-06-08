@@ -17,14 +17,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-
+ // for each digit it get the text onclick
     fun onDigit(view: View) {
         val input = findViewById<TextView>(R.id.tvInput)
         input.append((view as Button).text)
         lastNumeric = true
 
     }
-
+ // clears the text
     fun onClear(view: View){
         val input = findViewById<TextView>(R.id.tvInput)
         input.text = ""
@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity() {
         lastDot = false
 
     }
+
+    //to add decimal
     fun onDecimalPoint(view: View){
 
         if(lastNumeric && !lastDot){
@@ -42,6 +44,8 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
+    //what to do onclick on equals
     fun onEqual(view: View){
         if(lastNumeric){
             val input = findViewById<TextView>(R.id.tvInput)
@@ -94,7 +98,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
+ // onclick of each operator
     fun onOperator(view: View){
         val input = findViewById<TextView>(R.id.tvInput)
         if(lastNumeric && !isOperatorAdded(input.text.toString())){
@@ -103,6 +107,7 @@ class MainActivity : AppCompatActivity() {
             lastDot = false
         }
     }
+    //function to remove the zeros in the result
     private fun removeZero(result: String): String {
         var value = result
         if(result.contains(".0")){
@@ -110,6 +115,8 @@ class MainActivity : AppCompatActivity() {
         }
         return value
     }
+
+    //function to see if number is negative or if the operator already been used
     private fun isOperatorAdded(value: String) : Boolean {
         return if(value.startsWith("-")){
             false
