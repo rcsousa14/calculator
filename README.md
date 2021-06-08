@@ -2,9 +2,9 @@
 A simple calculator app using kotlin
 
 I created this app so I can learn kotlin (my second app).
-[X] I learn to better build UI especially using the LinearLayout
-[X] How to use order of operation
-[X] How To create functions and connect them to the UI(buttons, text, etc.)
+- [X] I learn to better build UI especially using the LinearLayout
+- [X] How to use order of operation
+- [X] How To create functions and connect them to the UI(buttons, text, etc.)
 ![screenshot](images/screenshot.png)
 
 ## What I want to learn
